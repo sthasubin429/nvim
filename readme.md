@@ -11,3 +11,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 :PackerSync
 ```
 
+- ripgrep install 
+```bash
+sudo apt-get install ripgrep
+```
+
