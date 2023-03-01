@@ -44,4 +44,11 @@ return require('packer').startup(function(use)
 
   -- vs-code like icons
   use("nvim-tree/nvim-web-devicons")
+  
+  -- auto closing
+  use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+
+  -- statusline
+  use("nvim-lualine/lualine.nvim")
 end)
