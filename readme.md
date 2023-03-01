@@ -16,3 +16,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 sudo apt-get install ripgrep
 ```
 
+- Install NerdFonts
+```
+https://github.com/ryanoasis/nerd-fonts
+```
+

@@ -1,20 +1,3 @@
-require("nvim-tree").setup({
-  open_on_setup = false,
-  view = {
-    centralize_selection = false,
-    cursorline = true,
-    debounce_delay = 15,
-    width = 30,
-    hide_root_folder = false,
-    side = "left",
-    preserve_window_proportions = false,
-    number = false,
-    relativenumber = false,
-    signcolumn = "yes"
-  }
-}
-)-- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -55,4 +38,10 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+
+  -- file explorer
+  use("nvim-tree/nvim-tree.lua")
+
+  -- vs-code like icons
+  use("nvim-tree/nvim-web-devicons")
 end)
