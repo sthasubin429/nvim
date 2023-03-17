@@ -2,6 +2,7 @@ require'nvim-web-devicons'.get_icons()
 
 -- remaps
 vim.keymap.set('n', '<leader>e', ":NvimTreeToggle<CR>")
+vim.keymap.set('n', '<leader>f', ":NvimTreeFocus<CR>")
 
 -- import nvim-tree plugin safely
 local setup, nvimtree = pcall(require, "nvim-tree")
